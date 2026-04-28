@@ -1,0 +1,135 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+.product-page {
+  padding: 30px;
+  background: #f6f7fb;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.product-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* =========================
+   CONTAINER (VERTICAL LIST)
+========================= */
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* =========================
+   PRODUCT CARD (FIXED)
+========================= */
+.product-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease;
+
+  padding: 10px;
+  position: relative;
+}
+
+/* hover */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* IMAGE */
+.product-image {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.1);
+}
+
+/* CONTENT */
+.product-content {
+  flex: 1;
+}
+
+.product-content h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.category {
+  font-size: 13px;
+  color: #666;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 8px;
+  color: #7c4dff;
+  font-size: 16px;
+}
+
+/* BUTTON */
+.view-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #7c4dff, #512da8);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(81, 45, 168, 0.3);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

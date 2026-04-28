@@ -1,0 +1,94 @@
+/* PAGE */
+.admin-page {
+  padding: 30px;
+  background: #f6f7fb;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* GRID */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.admin-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.admin-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.admin-content {
+  padding: 12px;
+}
+
+.price {
+  font-weight: bold;
+  color: #00b894;
+}
+
+/* ACTIONS */
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* EDIT */
+.edit-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  text-decoration: none;
+  color: black;
+}
+
+/* DELETE */
+.delete-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}

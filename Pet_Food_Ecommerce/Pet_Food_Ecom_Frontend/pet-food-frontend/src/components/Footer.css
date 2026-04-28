@@ -1,0 +1,39 @@
+/* FOOTER */
+.footer {
+  background: #406063;
+  color: #ccc;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  color: #00ffae;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: #00ffae;
+}
+
+.social-icons span {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.social-icons span:hover {
+  color: #00ffae;
+}
